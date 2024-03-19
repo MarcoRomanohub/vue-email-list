@@ -18,7 +18,10 @@
 
     <div id="app">
         <ul>
-            <li v-for="(email, index) in emailList.length"> {{emailList[index]}} </li>
+
+            <li v-if="isFull" v-for="(email, index) in emailList.length"> {{emailList[index]}} </li>
+            <li v-else v-for="(email, index) in emailList.length">  </li>
+
         </ul>
     </div>
 
