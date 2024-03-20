@@ -20,7 +20,7 @@
         <ul>
 
             <li v-if="isFull" v-for="(email, index) in emailList.length"> {{emailList[index]}} </li>
-            <li v-else v-for="(email, index) in emailList.length">  </li>
+            <li v-else v-for="(email, index) in emailList.length"> ...Loading </li>
 
         </ul>
     </div>
